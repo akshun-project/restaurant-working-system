@@ -5,7 +5,6 @@ import API from "../services/api";
 import { useCart } from "../context/CartContext";
 
 import MenuGrid     from "../components/menu/MenuGrid";
-import MenuSkeleton from "../components/menu/MenuSkeleton";
 import MenuFilters  from "../components/menu/MenuFilters";
 import FloatingCartBar from "../components/menu/FloatingCart";
 
@@ -341,7 +340,7 @@ else if (sortBy === "high")
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <MenuSkeleton />
+             
             </motion.div>
           )}
 
