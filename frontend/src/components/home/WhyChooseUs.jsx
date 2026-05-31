@@ -17,7 +17,11 @@ const STATS = [
   { value: "4.9 ★", label: "Customer Rating", sub: "Across 5,200+ reviews" },
   { value: "25m", label: "Avg Delivery", sub: "Real-time tracking" },
   { value: "10k+", label: "Happy Customers", sub: "And counting daily" },
-  { value: "1984", label: "Est. Since", sub: "40 years of flavour" },
+   {
+    value: "100%",
+    label: "Fresh Ingredients",
+    sub: "Sourced with care every day",
+  },
 ];
 
 const FEATURES = [
@@ -47,8 +51,8 @@ const FEATURES = [
     icon: Flame,
     color: "rose",
     title: "Authentic Dhaba Soul",
-    desc: "Traditional recipes passed down generations — slow-cooked dals, hand-rolled rotis, and real ghee. Nothing artificial.",
-    tag: "Since 1984",
+    desc: "Traditional North Indian flavors crafted with fresh ingredients, aromatic spices, and time-honored cooking techniques. Every meal is prepared with care and passion.",
+    tag: "Serving Taste, Not Trends",
   },
  
 ];
@@ -194,7 +198,7 @@ const MARQUEE_ITEMS = [
   "🌿 100% Pure Vegetarian Kitchen",
   "⚡ Delivery in under 30 minutes",
   "🎖️ FSSAI Certified & Hygiene Verified",
-  "👨‍🍳 Authentic recipes since 1984",
+  "👨‍🍳 Traditional taste, modern quality",
 ];
 
 function MarqueeStrip() {
