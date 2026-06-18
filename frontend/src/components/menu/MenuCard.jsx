@@ -1,4 +1,4 @@
- import { motion } from "framer-motion";
+  import { motion } from "framer-motion";
 import { useCart } from "../../context/CartContext";
 
 const BADGE_STYLES = {
