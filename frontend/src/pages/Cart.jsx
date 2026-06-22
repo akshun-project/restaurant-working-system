@@ -315,14 +315,20 @@ function OrderSummary({ subtotal, tax, delivery, total, itemCount, onCheckout })
     subtotal + delivery + tax;
 
  const handleCheckout = async () => {
+  const token = localStorage.getItem("token");
+
+  if (!token) {
+    navigate("/login", {
+      state: { from: "/cart" }
+    });
+    return;
+  }
+
   if (placingOrder) return;
 
   setPlacingOrder(true);
 
   try {
-    const token =
-      localStorage.getItem("token");
-
     const user = JSON.parse(
       localStorage.getItem("user")
     );
@@ -345,12 +351,19 @@ function OrderSummary({ subtotal, tax, delivery, total, itemCount, onCheckout })
       }
     );
 
-    clearCart();
+    navigate("/success", {
+  state: {
+    total,
+    itemCount,
+    customerName: user.name,
+    address: user.address,
+  },
+});
 
-    navigate("/success");
+clearCart();
+
   } catch (error) {
     console.log(error);
-
     alert("Failed to place order");
   } finally {
     setPlacingOrder(false);

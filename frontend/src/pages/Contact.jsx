@@ -118,10 +118,7 @@ function IntroSection() {
             variants={fadeUp(0.16)}
             className="mt-7 max-w-xl text-[16px] sm:text-[17px] leading-[1.85] text-zinc-500"
           >
-            Serving authentic North Indian comfort food from our kitchen in
-            Meerut Cantt since{" "}
-            <span className="font-semibold text-zinc-700">1984</span>. Stop by
-            for a meal, call us to order, or let us bring the dhaba home to you.
+           Authentic North Indian flavours, freshly prepared in Meerut Cantt and delivered straight to your doorstep.
           </motion.p>
 
           {/* Inline CTA row */}
